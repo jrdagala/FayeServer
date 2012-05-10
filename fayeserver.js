@@ -11,5 +11,7 @@ bayeux.bind('subscribe', function(clientId, channel){
 	  text:       'Sample text message',
 	});
 });
+
+
 bayeux.listen(8000);
 
