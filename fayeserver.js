@@ -8,8 +8,7 @@ bayeux.bind('publish',function(clientId, channel, data) {}
 bayeux.bind('subscribe', function(clientId, channel){
 	console.log('Subscriber: ' + clientId + ' - ' + channel);
 	bayeux.getClient().publish('/channel', {
-	  text:       'Sample text message',
-	});
+	  text:       'Sample text message'});
 });
 
 
